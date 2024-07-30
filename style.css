@@ -36,6 +36,14 @@ section {
 }
 
 
+.heading {
+
+    text-align: center;
+    font-size: 3rem;
+    margin: 5rem 0;
+
+}
+
 .header {
 
     display: flex;
@@ -247,6 +255,7 @@ section {
 
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     text-align: center;
     margin: 5rem 0;
@@ -407,7 +416,7 @@ section {
 
 }
 
-.about .row-2 .box .content .icons .icons-about {
+.about .row-2 .box .content .icons .icon-about {
 
     padding: 1rem 0;
 
@@ -429,6 +438,223 @@ section {
 }
 
 
+.service .row {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 2rem;
+
+
+}
+
+.service .row .serv {
+
+    border: 0.1rem solid var(--th-color);
+    text-align: center;
+    padding: 3rem;
+
+}
+
+.service .row .serv:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+
+.service .row .serv i {
+
+    color: var(--th-color);
+    background: var(--sc-color);
+    font-size: 3rem;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+
+}
+
+
+.service .row .serv h2 {
+
+    font-size: 2rem;
+    margin: 1rem;
+
+}
+
+
+.service .row .serv p {
+
+    font-size: 2rem;
+    margin: 1rem;
+
+}
+
+
+.call {
+
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+        url(pictures/image1.jpg) center no-repeat;
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+
+.call h1 {
+
+    font-size: 3.5rem;
+    margin: 1rem;
+    color: var(--min-color);
+}
+
+
+
+.call p {
+
+    font-size: 2.2rem;
+    margin: 1rem;
+    color: var(--min-color);
+
+}
+
+
+
+.btn {
+
+    display: inline-block;
+    padding: 0.8rem 3.8rem;
+    font-size: 1.8rem;
+    border: 0.1rem solid var(--min-color);
+    background: none;
+    color: var(--min-color);
+
+}
+
+
+.btn:hover {
+
+    background: var(--sc-color);
+    border: 0.1rem solid var(--sc-color);
+    /* color: var(--sc-color); */
+
+
+}
+
+.gallery .row {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    padding: 0.7rem;
+    gap: 0.1rem;
+
+}
+
+
+.gallery .row .box img {
+
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+
+}
+
+
+.gallery .row .box img:hover {
+
+    transform: scale(0.96);
+    opacity: 1;
+}
+
+
+
+.count .row {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 12rem;
+
+}
+
+
+.count .row .images img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.count .row .box {
+
+    width: 70%;
+
+}
+
+.count .row .box h1 {
+
+    font-size: 3.5rem;
+    margin: 1rem 0.5rem;
+
+}
+
+.count .row .box h1 {
+
+    font-size: 2rem;
+    margin: 1rem 0.5rem;
+
+}
+
+
+.count .row .box .content {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.count .row .box .content .icons i {
+
+    font-size: 2.7rem;
+    color: var(--sc-color);
+
+}
+
+.count .row .box .content .icons .span {
+
+    font-size: 2.3rem;
+    color: var(--th-color);
+
+}
+
+.count .row .box .content .icons h4 {
+
+
+    font-size: 2.5rem;
+    color: var(--th-color);
+
+}
+
+.count .row .box .content .icons .p {
+
+    font-size: 1.8rem;
+    color: var(--th-color);
+}
 
 
 
@@ -461,13 +687,10 @@ section {
 
     }
 
-
     .header .navbar .active {
 
         top: 7.5rem;
     }
-
-
 
     .header .navbar a {
 
@@ -476,9 +699,7 @@ section {
         padding: 1rem;
         color: var(--min-color);
         font-size: 2.6rem;
-
     }
-
 
     .header .navbar a:hover {
 
@@ -486,14 +707,16 @@ section {
 
     }
 
-
     .header .login-form {
 
         width: 20rem;
     }
 
+    .about .row,
+    .about .row-2 {
 
-
+        flex-direction: column;
+    }
 
 
 
