@@ -302,11 +302,14 @@ section {
     align-items: center;
     justify-content: space-between;
 
+
+
 }
 
 .about .row .image img {
 
     width: 100%;
+    /* height: 100%; */
     object-fit: cover;
 
 }
@@ -359,7 +362,7 @@ section {
 
 }
 
-.about .row-2 .images {
+.about .row .images {
 
     width: 100%;
     height: 43rem;
@@ -438,7 +441,7 @@ section {
 }
 
 
-.service .row {
+.services .row {
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
@@ -447,7 +450,7 @@ section {
 
 }
 
-.service .row .serv {
+.services .row .serv {
 
     border: 0.1rem solid var(--th-color);
     text-align: center;
@@ -455,7 +458,7 @@ section {
 
 }
 
-.service .row .serv:hover {
+.services .row .serv:hover {
     transform: scale(1.1);
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.6);
 }
@@ -465,7 +468,7 @@ section {
 
 
 
-.service .row .serv i {
+.services .row .serv i {
 
     color: var(--th-color);
     background: var(--sc-color);
@@ -477,7 +480,7 @@ section {
 }
 
 
-.service .row .serv h2 {
+.services .row .serv h2 {
 
     font-size: 2rem;
     margin: 1rem;
@@ -485,7 +488,7 @@ section {
 }
 
 
-.service .row .serv p {
+.services .row .serv p {
 
     font-size: 2rem;
     margin: 1rem;
@@ -610,12 +613,12 @@ section {
 
 .count .row .box h1 {
 
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin: 1rem 0.5rem;
 
 }
 
-.count .row .box h1 {
+.count .row .box p {
 
     font-size: 2rem;
     margin: 1rem 0.5rem;
@@ -649,7 +652,7 @@ section {
 .count .row .box .content .icons h4 {
 
 
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: var(--th-color);
 
 }
@@ -659,6 +662,216 @@ section {
     font-size: 1.8rem;
     color: var(--th-color);
 }
+
+.chose {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+        url(pictures/image1.jpg) center no-repeat;
+
+    height: 40rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.chose h1 {
+
+    font-size: 3.5rem;
+    color: var(--min-color);
+
+}
+
+.chose p {
+
+    font-size: 2rem;
+    margin: 1rem;
+    color: var(--min-color);
+
+}
+
+
+.team .row {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    gap: 2rem;
+    text-align: center;
+
+    /* width: 50%; */
+
+}
+
+
+.team .row .box:hover {
+
+    transform: scale(1.1);
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+
+
+.team .row .box img {
+
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+.team .row .box .content h3 {
+
+    font-size: 1.9rem;
+    color: var(--th-color);
+    margin: 0.8rem 0;
+
+}
+
+.team .row .box .content .icons i {
+
+    font-size: 2.2rem;
+    color: var(--th-color);
+    margin: 0.5rem 0.2rem;
+
+}
+
+
+.team .row .box .content .icons i:hover {
+
+    color: var(--sc-color);
+
+}
+
+
+.contact .form {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7rem;
+    gap: 2rem;
+
+}
+
+.contact .form .icons i {
+
+    font-size: 3rem;
+    color: var(--sc-color);
+
+}
+
+.contact .form .icons h3 {
+
+    font-size: 2rem;
+    color: var(--th-color);
+    margin: 0.8rem 0;
+
+}
+
+
+.contact .form form input,
+textarea {
+
+    background: var(--min-color);
+    border: 0.1rem solid rgb(166, 160, 160);
+    padding: 1rem;
+    height: 4.5rem;
+    width: 100%;
+    margin: 0.7rem 0;
+    color: var(--th-color);
+    font-size: 1.9rem;
+
+}
+
+
+
+.contact .form form input[type="submit"] {
+
+    background: var(--sc-color);
+    cursor: pointer;
+    margin-bottom: 2rem;
+    color: var(--min-color);
+    border: 0.1rem solid var(--sc-color);
+
+}
+
+.contact .form form input[type="submit"]:hover {
+
+    background: none;
+    color: var(--sc-color);
+}
+
+
+.footer {
+
+    background: var(--th-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    gap: 2rem;
+    padding: 4rem;
+
+    text-align: center;
+
+
+    /* flex-wrap: wrap; */
+
+
+}
+
+
+.footer h3 {
+
+    font-size: 3.5rem;
+    margin: 1rem 0;
+    color: var(--min-color);
+
+}
+
+
+
+.footer p {
+
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color: var(--min-color);
+
+}
+
+
+
+.footer i {
+
+    font-size: 2.6rem;
+    margin: 1rem 0.5rem;
+    color: var(--min-color);
+
+}
+
+
+
+.footer a {
+
+    display: block;
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: var(--min-color);
+
+}
+
+
+footer a:hover,
+footer i:hover {
+
+    color: var(--sc-color);
+
+}
+
+
+
 
 
 
@@ -717,28 +930,36 @@ section {
     }
 
     .about .row,
-    .about .row-2 {
+    .about .row-2,
+    .count .row {
 
         flex-direction: column;
     }
 
 
 
-    .gallery .row {
 
-        /* display: grid; */
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-        /* padding: 0.7rem; */
-        /* gap: 0.1rem; */
 
-        /* flex-wrap: wrap; */
+    .services .row,
+    .team .row {
+
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
 
     }
 
 
+    .gallery .row {
+
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+
+    }
+
+    .footer {
+
+        /* flex-direction: column; */
 
 
 
-
+    }
 
 }
